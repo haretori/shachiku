@@ -1,5 +1,10 @@
 .far, .fas, .fab{
   font-size: 5em;
+  color: #000000;
+}
+
+.far:hover, .fas:hover, .fab:hover{
+  color:#000000BF;
 }
 
 .row{
