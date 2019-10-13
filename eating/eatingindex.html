@@ -27,13 +27,11 @@
       </div>
       <br/>
      
-      <div id="chart">
-       <h4>Restaurant Spinwheel</h4>
-      </div>
+      <div id="chart"></div>
       <div id="question"><h1></h1></div>
     
-      <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-      <script type="text/javascript" charset="utf-8">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
         var padding = {top:20, right:40, bottom:0, left:0},
             w = 500 - padding.left - padding.right,
             h = 500 - padding.top  - padding.bottom,
@@ -42,24 +40,27 @@
             oldrotation = 0,
             picked = 100000,
             oldpick = [],
-            color = d3.scale.category20();
-                    {"label":"水門",  "value":1}, 
-                    {"label":"五斗米",  "value":1}, 
-                    {"label":"粢飯",  "value":1}, 
-                    {"label":"一番屋",  "value":1}, 
-                    {"label":"-",  "value":1}, 
-                    {"label":"-",  "value":1}, 
-                    {"label":"-",  "value":1}, 
-                    {"label":"-",  "value":1}, 
-                    {"label":"-",  "value":1}, 
-                    {"label":"-", "value":1}, 
-                    {"label":"-", "value":1}, 
-                    {"label":"-", "value":1}, 
-                    {"label":"-", "value":1}, 
-                    {"label":"-", "value":1},
-                    {"label":"-", "value":1},
-                    {"label":"-", "value":1},
-                    {"label":"-", "value":1},
+            color = d3.scale.category20();//category20c()
+            //randomNumbers = getRandomNumbers();
+        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+        var data = [
+                    {"label":"古月",  "value":1}, 
+                    {"label":"瑞士雞翼",  "value":1}, 
+                    {"label":"糙米",  "value":1}, 
+                    {"label":"25",  "value":1}, 
+                    {"label":"鯛魚",  "value":1}, 
+                    {"label":"一葉",  "value":1}, 
+                    {"label":"宏發燒味",  "value":1}, 
+                    {"label":"旺記",  "value":1}, 
+                    {"label":"太古坊越南野",  "value":1}, 
+                    {"label":"大叻", "value":1}, 
+                    {"label":"手撕雞外賣", "value":1}, 
+                    {"label":"太興", "value":1}, 
+                    {"label":"Chiu Chow", "value":1}, 
+                    {"label":"吉野家", "value":1},
+                    {"label":"Camper", "value":1},
+                    {"label":"海南雞", "value":1},
+                    {"label":"一葉隔離", "value":1},
                    
         ];
         var svg = d3.select('#chart')
