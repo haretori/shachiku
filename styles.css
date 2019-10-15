@@ -8,10 +8,10 @@
 }
 
 .row{
-  padding: 1em;
+  padding: 16px;
 }
 
 .pagetitle, .sectiontitle, #chart{
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-left: 16px;
+  padding-top: 16px;
 }
