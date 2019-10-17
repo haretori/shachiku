@@ -18,6 +18,12 @@
           <h5>Channels</h5>
         </div>
         
+        <div class="col-sm-3">
+          <a href="#slackcommands">
+            <i class="fas fa-terminal"></i></a>
+          <h5>Commands</h5>
+        </div>
+        
       </div>
       
       <div id="slackchannels">
@@ -28,7 +34,9 @@
               <p>#good_shops : for sharing good merchants</p>
               <p>#hong-kong-office : hand letter channel (?)</p>
               <p>#prettiesinhkoffice : girls channel</p>
+              <p>#randompoopoo : real random channel</p>
           </div>
+        
           <div id="teamchannel">
             <h5>Team channels</h5>
               <p>#all_pm : product + project, for basic testing reminder and feature rollout schedule update</p>
@@ -39,7 +47,10 @@
               <p>#pjm_team : project internal channel, and for sprint reports</p>
               <p>prd-eng-hk : glass room channel</p>
               <p>product-engineering : engineer + PM + QA + designer + project, announce prod-int machine availability</p>
+              <p>#product-operations : almost all teams, for relatively minor customer issues</p>
+              <p>#product-team : product + QA + designer + project, </p>
           </div>
+        
           <div id="taskchannnel">
             <h5>Tasks related channels</h5>
               <p>#am_frontend_project : for AMs to ask for plus case possibility and quotation, and confirm to start plus cases</p>
@@ -48,7 +59,10 @@
               <p>#homepage-heaven : for homepage adjustment tasks, except content update for my and cn</p>
               <p>#loreal特勤隊 : for shu/cla/hr tasks</p>
               <p>#my-homepage : for discussion and tasks on my homepage</p>
-    </div>
+              <p>sales_project : for sales to ask for plus case possibility and quotation, and confirm to start plus cases</p>
+              <p>v2theme_discussion : for all v2 theme related issues, confirming sprint scope and priority</p>
+          </div>
+        
           <div id="settingnotificationchannel">
             <h5>Setting and notification channels</h5>
               <p>#bitbucket-integration : notification on merging commits to dev</p>
@@ -60,7 +74,19 @@
               <p>#in-dev-branch : notification on merging cards to "in dev branch"</p>
               <p>#jira-setup : discussoion on how to optimise Jira workflow and settings</p>
               <p>#merchant-events : announce upcoming merchant events, prevent deploy build near event time</p>
+              <p>#releases : announce release of homepage / build etc.</p>
           </div>
+        
+      </div>
+    
+      <div id="slackcommands">
+        <h5>Commands</h5>
+          <p>@channel : to tag everyone, include offline members</p>
+          <p>@here : to taga everyone online</p>
+          <p>/giphy title : load a giphy with chosen title</p>
+          <p>/remind who what time : ask slackbot to remind someone on something at a specific time</p>
+          <p>/release_note version : use in #daily-deployment channel, call a bot to announce cards in a version</p>
+          <p>/to-be-released version : use in #releases channel, call a bot to announce cards in a version</p>
       </div>
     
     <a href="./howtotools.html">Back to previous page</a>
