@@ -1,3 +1,7 @@
+body{
+  padding-left: 16px;
+}
+
 .far, .fas, .fab{
   font-size: 5em;
   color: #000000;
@@ -6,6 +10,7 @@
 .far:hover, .fas:hover, .fab:hover{
   color:#00000099;
 }
+
 
 .row{
   padding: 16px;
