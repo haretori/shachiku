@@ -29,5 +29,8 @@ body{
   padding-right: 20px;
   font-size: 14px;
   background-color: #aed9ff;
-  color: #000000;
+}
+
+.homepage-button a{
+  color: #ffffff;
 }
